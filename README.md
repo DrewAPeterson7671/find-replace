@@ -1,23 +1,25 @@
-# Rock Paper Scissors
+# Find-Replace
 ## Created by Drew Peterson and Lara Bjork on December 11, 2019
 ### Project Description
 
 This project was completed as an in-class assignment for the Ruby class  at Epicodus, during a week focused on Behavior-Driven Development with Ruby. The task description was as follows:
-_Recreate the game Rock, Paper, Scissors. This can be a two player game or a game you play against the computer. Write a method that can handle the different combinations of plays and make sure to write specs for all possible combination of plays. After all specs are passing, build a script that a player can run to play the game. Make sure to include a README in your GitHub repo._
+_Create a script where a user can find and replace words in a string. The method in action will look something like "Hello world".find_and_replace("world", "universe"). The result of would be "Hello universe"._
+
+_Do first: Write the method so that it replaces whole words only, as in the "hello world" example above. Make sure all your tests pass._
+
+_Do second: Add to your method so that your method takes into account partial matches. For example "I am walking my cat to the cathedral".find_and_replace("cat", "dog") would return the silly phrase "I am walking my dog to the doghedral."_
 
 ### Specifications
 These specs were developed based on the assignment description.
-* if user1 has paper and user2 has paper, results in draw.
-* if user1 has paper and user2 has rock, results in user1 paper wins.
-* if user1 has paper and user2 has scissors, results in user1 paper loses.
-* if user1 has rock and user2 has paper, results in user1 rock loses.
-* if user1 has rock and user2 has rock, results in draw.
-* if user1 has rock and user2 has scissors, results in user1 rock wins.
-* if user1 has scissors and user2 has paper, results in user1 scissors wins.
-* if user1 has scissors and user2 has rock, results in user1 scissors loses.
-* if user1 has scissors and user2 has scissors, results in draw.
-
-
+* the program will find the word that the user wants to have replaced.
+Input: "The program will perform these replacements correctly for all the words in a string, not just a single word", find "perform"
+Output: "perform"
+* the program will find the word and replace it.
+Input: "The program will perform these replacements correctly for all the words in a string, not just a single word", find "perform", replace with "acquire"
+Output: "The program will acquire these replacements correctly for all the words in a string, not just a single word"
+* the program will only replace when there is a complete match.
+Input: "I am walking my cat to the cathedral", replace "cat" with "dog" but not in "cathedral"
+Output: "I am walking my dog to the cathedral"
 
 
 ### Technologies Used
