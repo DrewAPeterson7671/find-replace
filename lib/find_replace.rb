@@ -12,7 +12,7 @@ class FindReplace
   end
 
   def replacer
-    @phrase_string.gsub(/\b#{@find_word}\b/, @replace_word)
+    @phrase_string.gsub(/\b#{@find_word}\b/i, @replace_word)
   end
 
 
