@@ -9,10 +9,11 @@ class FindReplace
 
   def finder
     @phrase_string.include? @find_word
-
   end
 
-
+  def replacer
+    @phrase_string.gsub(/\b#{@find_word}\b/, @replace_word)
+  end
 
 
 end
